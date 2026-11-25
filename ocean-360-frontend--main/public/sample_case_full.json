@@ -1,0 +1,144 @@
+{
+  "case_id": "SIH26143-IND-2026-009",
+  "status": "HIGH CONFIDENCE DRIFT MATCH",
+  "region": "Mumbai Offshore / JNPT Approach, Eastern Arabian Sea",
+  "location": "Mumbai Offshore (18.9182°N, 72.7845°E), Maharashtra Coast, India",
+  "detection": {
+    "region": "Mumbai Offshore / JNPT Approach, Eastern Arabian Sea",
+    "location": "Mumbai Offshore (18.9182°N, 72.7845°E), Maharashtra Coast, India",
+    "detection_time": "2026-09-10T14:30:00Z",
+    "area_km2": 18.45,
+    "centroid": [18.9182, 72.7845],
+    "satellite": "Sentinel-1B SAR C-Band",
+    "notes": "Dark synthetic aperture radar slick anomaly detected along key Arabian Sea shipping approach corridor to JNPT / Mumbai port approach."
+  },
+  "hindcast": {
+    "release_time": "2026-09-10T02:15:00Z",
+    "origin": [18.8350, 72.6920],
+    "trajectory": [
+      [18.8350, 72.6920],
+      [18.8490, 72.7050],
+      [18.8640, 72.7210],
+      [18.8780, 72.7380],
+      [18.8920, 72.7550],
+      [18.9050, 72.7710],
+      [18.9182, 72.7845]
+    ]
+  },
+  "suspects": [
+    {
+      "mmsi": "413298110",
+      "name": "MV OCEAN STAR",
+      "type": "Oil / Chemical Tanker",
+      "score": 94.2,
+      "distance_km": 0.38,
+      "dwell_time_mins": 42,
+      "avg_speed_knots": 11.4,
+      "closest_time": "2026-09-10T02:10:00Z",
+      "reason": "Direct trajectory intersection at estimated release window (02:10 UTC). Tanker classification with course slowdown match.",
+      "flag": "Panama",
+      "length_m": 245,
+      "width_m": 42,
+      "draft_m": 14.2,
+      "track": [
+        {"lat": 18.7800, "lon": 72.6400, "timestamp": "2026-09-10T01:00:00Z", "speed": 13.5},
+        {"lat": 18.8050, "lon": 72.6620, "timestamp": "2026-09-10T01:30:00Z", "speed": 12.8},
+        {"lat": 18.8330, "lon": 72.6900, "timestamp": "2026-09-10T02:10:00Z", "speed": 11.4},
+        {"lat": 18.8620, "lon": 72.7180, "timestamp": "2026-09-10T02:45:00Z", "speed": 12.1},
+        {"lat": 18.8950, "lon": 72.7500, "timestamp": "2026-09-10T03:20:00Z", "speed": 13.0},
+        {"lat": 18.9300, "lon": 72.7900, "timestamp": "2026-09-10T04:00:00Z", "speed": 13.8}
+      ]
+    },
+    {
+      "mmsi": "352994000",
+      "name": "MARINER EMPRESS",
+      "type": "Bulk Carrier",
+      "score": 78.5,
+      "distance_km": 1.82,
+      "dwell_time_mins": 15,
+      "avg_speed_knots": 14.1,
+      "closest_time": "2026-09-10T01:55:00Z",
+      "reason": "Passed within 1.8km of hindcast origin 20 minutes prior to release estimation window.",
+      "flag": "Liberia",
+      "length_m": 190,
+      "width_m": 32,
+      "draft_m": 11.0,
+      "track": [
+        {"lat": 18.7600, "lon": 72.6100, "timestamp": "2026-09-10T01:10:00Z", "speed": 14.5},
+        {"lat": 18.8200, "lon": 72.6780, "timestamp": "2026-09-10T01:55:00Z", "speed": 14.1},
+        {"lat": 18.8800, "lon": 72.7400, "timestamp": "2026-09-10T02:40:00Z", "speed": 14.2},
+        {"lat": 18.9400, "lon": 72.8100, "timestamp": "2026-09-10T03:25:00Z", "speed": 14.0}
+      ]
+    },
+    {
+      "mmsi": "419001240",
+      "name": "INS VIKRAM ESCORT",
+      "type": "Naval / Patrol",
+      "score": 41.0,
+      "distance_km": 4.50,
+      "dwell_time_mins": 60,
+      "avg_speed_knots": 18.0,
+      "closest_time": "2026-09-10T03:00:00Z",
+      "reason": "High speed military transit through buffer quadrant. Low probability profile for heavy oil discharge.",
+      "flag": "India",
+      "length_m": 105,
+      "width_m": 14,
+      "draft_m": 4.5,
+      "track": [
+        {"lat": 18.8000, "lon": 72.7300, "timestamp": "2026-09-10T02:30:00Z", "speed": 18.5},
+        {"lat": 18.8700, "lon": 72.7350, "timestamp": "2026-09-10T03:00:00Z", "speed": 18.0},
+        {"lat": 18.9400, "lon": 72.7400, "timestamp": "2026-09-10T03:30:00Z", "speed": 17.8}
+      ]
+    },
+    {
+      "mmsi": "412883490",
+      "name": "SEAWAVE TRADER",
+      "type": "Container Ship",
+      "score": 32.1,
+      "distance_km": 7.20,
+      "dwell_time_mins": 0,
+      "avg_speed_knots": 21.5,
+      "closest_time": "2026-09-10T04:20:00Z",
+      "reason": "High speed container shipping line downstream post-release window.",
+      "flag": "Singapore",
+      "length_m": 330,
+      "width_m": 48,
+      "draft_m": 15.1,
+      "track": [
+        {"lat": 18.8100, "lon": 72.7800, "timestamp": "2026-09-10T04:00:00Z", "speed": 21.8},
+        {"lat": 18.8700, "lon": 72.8200, "timestamp": "2026-09-10T04:20:00Z", "speed": 21.5},
+        {"lat": 18.9300, "lon": 72.8600, "timestamp": "2026-09-10T04:40:00Z", "speed": 21.2}
+      ]
+    },
+    {
+      "mmsi": "419900812",
+      "name": "GANGES EXPRESS",
+      "type": "Fishing Vessel",
+      "score": 18.4,
+      "distance_km": 12.10,
+      "dwell_time_mins": 120,
+      "avg_speed_knots": 4.2,
+      "closest_time": "2026-09-10T00:30:00Z",
+      "reason": "Stationary trawling activity 12km west of origin; low velocity small vessel.",
+      "flag": "India",
+      "length_m": 28,
+      "width_m": 7,
+      "draft_m": 2.8,
+      "track": [
+        {"lat": 18.7900, "lon": 72.5500, "timestamp": "2026-09-10T00:00:00Z", "speed": 4.0},
+        {"lat": 18.8000, "lon": 72.5600, "timestamp": "2026-09-10T01:00:00Z", "speed": 4.3},
+        {"lat": 18.8100, "lon": 72.5550, "timestamp": "2026-09-10T02:00:00Z", "speed": 4.1}
+      ]
+    }
+  ],
+  "map": {
+    "center": [18.8800, 72.7400],
+    "zoom": 11
+  },
+  "filter_defaults": {
+    "max_distance_km": 15,
+    "min_dwell_mins": 0,
+    "max_speed_knots": 30,
+    "top_n": 10
+  }
+}

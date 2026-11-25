@@ -1,0 +1,45 @@
+# Python / Virtual Environments
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+ENV/
+
+# Node / Frontend Build
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Environment & Secrets
+.env
+.env.*
+!.env.example
+
+# Large Datasets & Model Artifacts
+data/
+DATASETS/
+inference_outputs/
+outputs/
+pipeline_runs/
+checkpoints/
+wandb/
+*.tif
+*.tiff
+*.nc
+*.pt
+*.pth
+*.h5
+*.zip
+*.tar
+*.gz
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db

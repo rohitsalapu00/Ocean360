@@ -1,0 +1,24 @@
+{
+  "case_id": "SP-02-FALSE-POSITIVE",
+  "status": "LOOK-ALIKE",
+  "region": "Mumbai Offshore / North Arabian Low-Wind Zone",
+  "location": "North Arabian Sea (18.9800°N, 72.6500°E)",
+  "detection": {
+    "region": "Mumbai Offshore / North Arabian Low-Wind Zone",
+    "location": "North Arabian Sea (18.9800°N, 72.6500°E)",
+    "detection_time": "2026-09-11T12:00:00Z",
+    "area_km2": 6.20,
+    "centroid": [18.9800, 72.6500],
+    "satellite": "Sentinel-1A (C-SAR)",
+    "notes": "Low-wind calm sea area producing look-alike dark backscatter pattern."
+  },
+  "hindcast": {
+    "release_time": "2026-09-11T08:00:00Z",
+    "origin": [18.9500, 72.6200],
+    "trajectory": [
+      [18.9500, 72.6200],
+      [18.9800, 72.6500]
+    ]
+  },
+  "suspects": []
+}
